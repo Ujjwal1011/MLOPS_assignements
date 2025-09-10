@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>DVC Plot</title>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.18.2"></script>
+    
+    <style>
+        table {
+            border-spacing: 15px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id = "log_json">
+        <script type = "text/javascript">
+            var spec = {"$schema": "https://vega.github.io/schema/vega-lite/v5.json", "data": {"values": [{"iteration": 1, "train_accuracy": 0.8103932584269663, "test_accuracy": 0.7988826815642458, "train_loss": 0.45032039284231473, "test_loss": 0.42308763453261145, "rev": "workspace"}, {"iteration": 2, "train_accuracy": 0.8047752808988764, "test_accuracy": 0.8044692737430168, "train_loss": 0.4491077146801712, "test_loss": 0.42371831375059615, "rev": "workspace"}, {"iteration": 3, "train_accuracy": 0.8019662921348315, "test_accuracy": 0.8100558659217877, "train_loss": 0.4483446304341757, "test_loss": 0.4168127189101506, "rev": "workspace"}, {"iteration": 4, "train_accuracy": 0.8019662921348315, "test_accuracy": 0.8044692737430168, "train_loss": 0.4482603126460865, "test_loss": 0.41738225944382373, "rev": "workspace"}, {"iteration": 5, "train_accuracy": 0.797752808988764, "test_accuracy": 0.8100558659217877, "train_loss": 0.4482674496482729, "test_loss": 0.41674850302193667, "rev": "workspace"}, {"iteration": 6, "train_accuracy": 0.8019662921348315, "test_accuracy": 0.8044692737430168, "train_loss": 0.44825207709894477, "test_loss": 0.41676053406376906, "rev": "workspace"}, {"iteration": 7, "train_accuracy": 0.8019662921348315, "test_accuracy": 0.8044692737430168, "train_loss": 0.4482541715706747, "test_loss": 0.41693765267208394, "rev": "workspace"}, {"iteration": 8, "train_accuracy": 0.800561797752809, "test_accuracy": 0.8044692737430168, "train_loss": 0.44824811487352756, "test_loss": 0.41696927849897536, "rev": "workspace"}, {"iteration": 9, "train_accuracy": 0.800561797752809, "test_accuracy": 0.8044692737430168, "train_loss": 0.4482495859416445, "test_loss": 0.4169404273672807, "rev": "workspace"}, {"iteration": 10, "train_accuracy": 0.800561797752809, "test_accuracy": 0.8044692737430168, "train_loss": 0.44825005516296407, "test_loss": 0.41695795115397605, "rev": "workspace"}, {"iteration": 11, "train_accuracy": 0.800561797752809, "test_accuracy": 0.8044692737430168, "train_loss": 0.4482502931044826, "test_loss": 0.4169576145089979, "rev": "workspace"}, {"iteration": 12, "train_accuracy": 0.800561797752809, "test_accuracy": 0.8044692737430168, "train_loss": 0.4482426802034231, "test_loss": 0.41692705198316565, "rev": "workspace"}, {"iteration": 13, "train_accuracy": 0.800561797752809, "test_accuracy": 0.8044692737430168, "train_loss": 0.4482445082551367, "test_loss": 0.4169543358486689, "rev": "workspace"}, {"iteration": 14, "train_accuracy": 0.800561797752809, "test_accuracy": 0.8044692737430168, "train_loss": 0.4482437421725505, "test_loss": 0.4169399143825489, "rev": "workspace"}, {"iteration": 15, "train_accuracy": 0.800561797752809, "test_accuracy": 0.8044692737430168, "train_loss": 0.44824393085550035, "test_loss": 0.416945867163318, "rev": "workspace"}, {"iteration": 16, "train_accuracy": 0.800561797752809, "test_accuracy": 0.8044692737430168, "train_loss": 0.44824354656030574, "test_loss": 0.4169488860634623, "rev": "workspace"}, {"iteration": 17, "train_accuracy": 0.800561797752809, "test_accuracy": 0.8044692737430168, "train_loss": 0.4482436972470458, "test_loss": 0.4169507829794783, "rev": "workspace"}, {"iteration": 18, "train_accuracy": 0.800561797752809, "test_accuracy": 0.8044692737430168, "train_loss": 0.44824369724675356, "test_loss": 0.41695078298021854, "rev": "workspace"}, {"iteration": 19, "train_accuracy": 0.800561797752809, "test_accuracy": 0.8044692737430168, "train_loss": 0.4482436972467536, "test_loss": 0.41695078298021854, "rev": "workspace"}, {"iteration": 20, "train_accuracy": 0.800561797752809, "test_accuracy": 0.8044692737430168, "train_loss": 0.4482436972467536, "test_loss": 0.41695078298021854, "rev": "workspace"}]}, "title": {"text": "Training vs Testing Accuracy", "anchor": "middle"}, "params": [{"name": "grid", "select": "interval", "bind": "scales"}], "width": 300, "height": 300, "mark": {"type": "line", "tooltip": {"content": "data"}}, "encoding": {"x": {"field": "iteration", "type": "quantitative", "title": "iteration"}, "y": {"field": "train_accuracy", "type": "quantitative", "title": "train_accuracy", "scale": {"zero": false}}, "color": {"field": "rev", "scale": {"domain": ["workspace"], "range": ["#945dd6"]}}, "strokeDash": {}, "tooltip": [{"field": "rev"}, {"field": "iteration"}, {"field": "train_accuracy"}]}};
+            vegaEmbed('#log_json', spec);
+        </script>
+    </div>
+    
+</body>
+</html>
