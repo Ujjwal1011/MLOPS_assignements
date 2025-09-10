@@ -12,12 +12,7 @@ stages:
       - src/train.py
     outs:
       - models/model.pkl
-    plots:
-      - log.json:
-          x: iteration
-          y: train_accuracy
-          title: "Training vs Testing Accuracy"
-          template: simple
+
 
   evaluate:
     cmd: python src/evaluate.py

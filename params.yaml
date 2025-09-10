@@ -7,14 +7,14 @@ preprocessing:
   encode: True
 
 model:
-  # type: RandomForestClassifier
-  # params:
-  #   n_estimators: 8
-  #   max_depth: 2
-  #   random_state: 42
-  type: LogisticRegression
+  type: RandomForestClassifier
   params:
-    max_iter: 5
+    n_estimators: 16
+    max_depth: 2
+    random_state: 42
+  # type: LogisticRegression
+  # params:
+  #   max_iter: 5
 
 training:
   test_size: 0.2
