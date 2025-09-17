@@ -1,12 +1,16 @@
 stages:
   preprocess:
-    cmd: python src/preprocess.py
+    cmd: |
+      mkdir -p data/processed
+      python src/preprocess.py
     outs:
       - data/processed/train.csv
       - data/processed/test.csv
 
   train:
-    cmd: python src/train.py
+    cmd: |
+      mkdir -p models
+      python src/train.py
     deps:
       - data/processed/train.csv
       - src/train.py
