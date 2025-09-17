@@ -22,5 +22,5 @@ stages:
     outs:
       - experiments/results.json
     metrics:
-    - metrics.json
+      - metrics.json
     
