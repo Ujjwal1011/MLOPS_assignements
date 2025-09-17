@@ -30,7 +30,7 @@ def evaluate(config):
         "accuracy": accuracy_score(y_test, y_pred),
         "f1_score": f1_score(y_test, y_pred,average="macro"),
     }
-    with open("metric.json", "w") as f:
+    with open("metrics.json", "w") as f:
         json.dump(metrics, f)
         
 
