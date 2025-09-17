@@ -1,8 +1,6 @@
 stages:
   preprocess:
-    cmd: |
-      mkdir -p data/processed
-      python src/preprocess.py
+    cmd: python src/preprocess.py
     outs:
       - data/processed/train.csv
       - data/processed/test.csv
@@ -15,6 +13,7 @@ stages:
     outs:
       - models/model.pkl
 
+
   evaluate:
     cmd: python src/evaluate.py
     deps:
@@ -23,4 +22,5 @@ stages:
     outs:
       - experiments/results.json
     metrics:
-      - metrics.json
+    - metrics.json
+    
