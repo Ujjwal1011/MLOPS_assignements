@@ -43,7 +43,7 @@ stages:
       hash: md5
       md5: 657cc3f55a27e5f8114300c2d528bb30
       size: 223
-    - path: metric.json
+    - path: metrics.json
       hash: md5
       md5: 985632b10a7059b3cf92a749d50cd463
       size: 64
